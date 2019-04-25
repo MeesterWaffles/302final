@@ -1,0 +1,13 @@
+\\udrive.win.psu.edu\Users\n\e\neb5211\Desktop\cmpsc302-final-master\cmpsc302-final-master\SportsProject\bin\Debug\SportsProject.exe.config
+\\udrive.win.psu.edu\Users\n\e\neb5211\Desktop\cmpsc302-final-master\cmpsc302-final-master\SportsProject\bin\Debug\SportsProject.exe
+\\udrive.win.psu.edu\Users\n\e\neb5211\Desktop\cmpsc302-final-master\cmpsc302-final-master\SportsProject\bin\Debug\SportsProject.pdb
+\\udrive.win.psu.edu\Users\n\e\neb5211\Desktop\cmpsc302-final-master\cmpsc302-final-master\SportsProject\obj\Debug\SportsProject.csprojResolveAssemblyReference.cache
+\\udrive.win.psu.edu\Users\n\e\neb5211\Desktop\cmpsc302-final-master\cmpsc302-final-master\SportsProject\obj\Debug\SportsProject.MainForm.resources
+\\udrive.win.psu.edu\Users\n\e\neb5211\Desktop\cmpsc302-final-master\cmpsc302-final-master\SportsProject\obj\Debug\SportsProject.Players.resources
+\\udrive.win.psu.edu\Users\n\e\neb5211\Desktop\cmpsc302-final-master\cmpsc302-final-master\SportsProject\obj\Debug\SportsProject.Properties.Resources.resources
+\\udrive.win.psu.edu\Users\n\e\neb5211\Desktop\cmpsc302-final-master\cmpsc302-final-master\SportsProject\obj\Debug\SportsProject.Standings.resources
+\\udrive.win.psu.edu\Users\n\e\neb5211\Desktop\cmpsc302-final-master\cmpsc302-final-master\SportsProject\obj\Debug\SportsProject.Teams.resources
+\\udrive.win.psu.edu\Users\n\e\neb5211\Desktop\cmpsc302-final-master\cmpsc302-final-master\SportsProject\obj\Debug\SportsProject.csproj.GenerateResource.cache
+\\udrive.win.psu.edu\Users\n\e\neb5211\Desktop\cmpsc302-final-master\cmpsc302-final-master\SportsProject\obj\Debug\SportsProject.csproj.CoreCompileInputs.cache
+\\udrive.win.psu.edu\Users\n\e\neb5211\Desktop\cmpsc302-final-master\cmpsc302-final-master\SportsProject\obj\Debug\SportsProject.exe
+\\udrive.win.psu.edu\Users\n\e\neb5211\Desktop\cmpsc302-final-master\cmpsc302-final-master\SportsProject\obj\Debug\SportsProject.pdb

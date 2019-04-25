@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SportsProject.PlayerAbstract">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAQAAAAAgAABAggAAAQgAAAAAA=</HashCode>
+      <FileName>PlayerAbstract.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SportsProject.PlayerActive">
+    <Position X="3" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAggAAAgEAQAAAAAgAABAggAAAQgAAAAAA=</HashCode>
+      <FileName>PlayerActive.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SportsProject.PlayerInactive">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAQAAAAAgAABAggAAAQgAAAAAA=</HashCode>
+      <FileName>PlayerInactive.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SportsProject.TeamAbstract">
+    <Position X="5.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAgBAAQAAAAAAA=</HashCode>
+      <FileName>TeamAbstract.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SportsProject.TeamActive">
+    <Position X="7.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAhAAAAAggAAAgAAAAAAAAAAAAAAgBAAQAAAAAAA=</HashCode>
+      <FileName>TeamActive.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SportsProject.TeamInactive">
+    <Position X="5.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAgBAAQAAAAAAA=</HashCode>
+      <FileName>TeamInactive.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
