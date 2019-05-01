@@ -28,120 +28,253 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tbTeam = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tbDivision = new System.Windows.Forms.TextBox();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.teamPointsTbx = new System.Windows.Forms.TextBox();
-            this.teamNameTbx = new System.Windows.Forms.TextBox();
-            this.addTeamBtn = new System.Windows.Forms.Button();
-            this.teamsListBox = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.cbNorthEast = new System.Windows.Forms.ComboBox();
+            this.cbSouthEast = new System.Windows.Forms.ComboBox();
+            this.cbNorthWest = new System.Windows.Forms.ComboBox();
+            this.cbSouthWest = new System.Windows.Forms.ComboBox();
+            this.btnAddTeam = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.tbCity = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.Wheat;
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.teamPointsTbx);
-            this.groupBox1.Controls.Add(this.teamNameTbx);
-            this.groupBox1.Controls.Add(this.addTeamBtn);
-            this.groupBox1.Location = new System.Drawing.Point(37, 35);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(211, 141);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Add New Team";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 58);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(489, 152);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Team Points:";
+            this.label2.Size = new System.Drawing.Size(123, 25);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "North East";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(101, 184);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(40, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Team: ";
+            // 
+            // tbTeam
+            // 
+            this.tbTeam.Location = new System.Drawing.Point(161, 181);
+            this.tbTeam.Name = "tbTeam";
+            this.tbTeam.Size = new System.Drawing.Size(141, 20);
+            this.tbTeam.TabIndex = 4;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(101, 223);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 13);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Division: ";
+            // 
+            // tbDivision
+            // 
+            this.tbDivision.Location = new System.Drawing.Point(161, 223);
+            this.tbDivision.Name = "tbDivision";
+            this.tbDivision.Size = new System.Drawing.Size(141, 20);
+            this.tbDivision.TabIndex = 6;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(363, 462);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(74, 46);
+            this.btnBack.TabIndex = 7;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(489, 291);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(129, 25);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "North West";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(489, 223);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(127, 25);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "South East";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(489, 358);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(133, 25);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "South West";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 32);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(133, 54);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Team Name:";
+            this.label1.Size = new System.Drawing.Size(130, 25);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Add Teams";
             // 
-            // teamPointsTbx
+            // cbNorthEast
             // 
-            this.teamPointsTbx.Location = new System.Drawing.Point(93, 55);
-            this.teamPointsTbx.Name = "teamPointsTbx";
-            this.teamPointsTbx.Size = new System.Drawing.Size(100, 20);
-            this.teamPointsTbx.TabIndex = 2;
+            this.cbNorthEast.FormattingEnabled = true;
+            this.cbNorthEast.Items.AddRange(new object[] {
+            "Pittsburgh Power",
+            "New York Nuggets",
+            "Boston Bruisers"});
+            this.cbNorthEast.Location = new System.Drawing.Point(493, 181);
+            this.cbNorthEast.Name = "cbNorthEast";
+            this.cbNorthEast.Size = new System.Drawing.Size(121, 21);
+            this.cbNorthEast.TabIndex = 15;
+            this.cbNorthEast.SelectedIndexChanged += new System.EventHandler(this.cbNorthEast_SelectedIndexChanged);
             // 
-            // teamNameTbx
+            // cbSouthEast
             // 
-            this.teamNameTbx.Location = new System.Drawing.Point(93, 29);
-            this.teamNameTbx.Name = "teamNameTbx";
-            this.teamNameTbx.Size = new System.Drawing.Size(100, 20);
-            this.teamNameTbx.TabIndex = 1;
+            this.cbSouthEast.FormattingEnabled = true;
+            this.cbSouthEast.Items.AddRange(new object[] {
+            "Nashville Nightmare",
+            "Atlanta Aces",
+            "Miami Monsters"});
+            this.cbSouthEast.Location = new System.Drawing.Point(493, 251);
+            this.cbSouthEast.Name = "cbSouthEast";
+            this.cbSouthEast.Size = new System.Drawing.Size(121, 21);
+            this.cbSouthEast.TabIndex = 16;
             // 
-            // addTeamBtn
+            // cbNorthWest
             // 
-            this.addTeamBtn.Location = new System.Drawing.Point(60, 91);
-            this.addTeamBtn.Name = "addTeamBtn";
-            this.addTeamBtn.Size = new System.Drawing.Size(85, 37);
-            this.addTeamBtn.TabIndex = 0;
-            this.addTeamBtn.Text = "Submit new team";
-            this.addTeamBtn.UseVisualStyleBackColor = true;
-            this.addTeamBtn.Click += new System.EventHandler(this.AddTeamBtn_Click);
+            this.cbNorthWest.FormattingEnabled = true;
+            this.cbNorthWest.Items.AddRange(new object[] {
+            "Minneapolis Magic",
+            "Seattle Strikers",
+            "Portland Punishers"});
+            this.cbNorthWest.Location = new System.Drawing.Point(493, 319);
+            this.cbNorthWest.Name = "cbNorthWest";
+            this.cbNorthWest.Size = new System.Drawing.Size(121, 21);
+            this.cbNorthWest.TabIndex = 17;
             // 
-            // teamsListBox
+            // cbSouthWest
             // 
-            this.teamsListBox.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.teamsListBox.FormattingEnabled = true;
-            this.teamsListBox.ItemHeight = 16;
-            this.teamsListBox.Location = new System.Drawing.Point(375, 64);
-            this.teamsListBox.Name = "teamsListBox";
-            this.teamsListBox.Size = new System.Drawing.Size(294, 132);
-            this.teamsListBox.TabIndex = 1;
+            this.cbSouthWest.FormattingEnabled = true;
+            this.cbSouthWest.Items.AddRange(new object[] {
+            "Dallas Dragsters",
+            "Houston Heroes",
+            "Vegas Victory"});
+            this.cbSouthWest.Location = new System.Drawing.Point(493, 386);
+            this.cbSouthWest.Name = "cbSouthWest";
+            this.cbSouthWest.Size = new System.Drawing.Size(121, 21);
+            this.cbSouthWest.TabIndex = 18;
             // 
-            // button1
+            // btnAddTeam
             // 
-            this.button1.Location = new System.Drawing.Point(375, 35);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Show Teams";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.btnAddTeam.Location = new System.Drawing.Point(136, 271);
+            this.btnAddTeam.Name = "btnAddTeam";
+            this.btnAddTeam.Size = new System.Drawing.Size(75, 23);
+            this.btnAddTeam.TabIndex = 19;
+            this.btnAddTeam.Text = "Add";
+            this.btnAddTeam.UseVisualStyleBackColor = true;
+            this.btnAddTeam.Click += new System.EventHandler(this.btnAddTeam_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(489, 54);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(108, 25);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Divisions";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(106, 145);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(27, 13);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "City:";
+            // 
+            // tbCity
+            // 
+            this.tbCity.Location = new System.Drawing.Point(161, 142);
+            this.tbCity.Name = "tbCity";
+            this.tbCity.Size = new System.Drawing.Size(141, 20);
+            this.tbCity.TabIndex = 22;
             // 
             // Teams
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(720, 210);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.teamsListBox);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(800, 520);
+            this.Controls.Add(this.tbCity);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.btnAddTeam);
+            this.Controls.Add(this.cbSouthWest);
+            this.Controls.Add(this.cbNorthWest);
+            this.Controls.Add(this.cbSouthEast);
+            this.Controls.Add(this.cbNorthEast);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.tbDivision);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.tbTeam);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Name = "Teams";
             this.Text = "Teams";
             this.Load += new System.EventHandler(this.Teams_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox tbTeam;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox tbDivision;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox teamPointsTbx;
-        private System.Windows.Forms.TextBox teamNameTbx;
-        private System.Windows.Forms.Button addTeamBtn;
-        private System.Windows.Forms.ListBox teamsListBox;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cbNorthEast;
+        private System.Windows.Forms.ComboBox cbSouthEast;
+        private System.Windows.Forms.ComboBox cbNorthWest;
+        private System.Windows.Forms.ComboBox cbSouthWest;
+        private System.Windows.Forms.Button btnAddTeam;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox tbCity;
     }
 }
