@@ -37,7 +37,12 @@ namespace SportsProject
             int age = 0;
             int active = -1;
 
-            if(int.TryParse(txtAge.Text, out result))
+            //error checking begin
+            if (teamsListBox.SelectedIndex == -1 && rbActive.Checked)
+            {
+                MessageBox.Show("Error: an active player must have a team");
+            }
+            else if(int.TryParse(txtAge.Text, out result))
             {
                 age = int.Parse(txtAge.Text);
                 if(age <= 0) {
@@ -51,51 +56,22 @@ namespace SportsProject
                 return;
             }
 
-            if (int.TryParse(txtWins.Text, out result) && rbActive.Checked)
+            if ((!int.TryParse(txtWins.Text, out result)) && rbActive.Checked)
             {
-                wins = int.Parse(txtAge.Text);
-                if (wins < 0)
-                {
-                    MessageBox.Show("Error: Number of wins can not be negative");
-                    return;
-                }
-            }
-            else if (rbActive.Checked)
-            {
-                MessageBox.Show("Error: Number of wins required for active player");
+                MessageBox.Show("Error: Number of wins must be a number and is required for active player");
                 return;
             }
-
-            if (int.TryParse(txtLosses.Text, out result) && rbActive.Checked)
+            else if (!(int.TryParse(txtLosses.Text, out result)) && rbActive.Checked)
             {
-                losses = int.Parse(txtLosses.Text);
-                if (losses < 0)
-                {
-                    MessageBox.Show("Error: Number of losses can not be negative");
-                    return;
-                }
-            }
-            else if (rbActive.Checked)
-            {
-                MessageBox.Show("Number of losses required for active player");
+                MessageBox.Show("Number of losses must be a number and is required for active player");
                 return;
             }
-
-            if (int.TryParse(txtPoints.Text, out result) && rbActive.Checked)
+            else if (!(int.TryParse(txtPoints.Text, out result)) && rbActive.Checked)
             {
-                points = int.Parse(txtPoints.Text);
-                if(points >= 0) { }
-                else
-                {
-                    MessageBox.Show("Error: Number of points can not be negative");
-                    return;
-                }
-            }
-            else if (rbActive.Checked)
-            {
-                MessageBox.Show("Error: Number of points required for active player");
+                MessageBox.Show("Error: Number of points must be a number and is required for active player");
                 return;
             }
+            //error checking end
 
             if (rbActive.Checked)
             {
@@ -105,20 +81,26 @@ namespace SportsProject
             {
                 active = 1;
             }
-            switch(active)
+            switch (active)
             {
                 case 0: //active
-                    PlayerActive pActive = new PlayerActive
+                    try
                     {
-                        fName = fName,
-                        lName = lName,
-                        Age = age,
-                        Wins = wins,
-                        Losses = losses,
-                        Points = points,
-                        Active = true
-                    };
-                    playerListActive.Add(pActive);
+                        PlayerActive pActive = new PlayerActive
+                        {
+                            fName = fName,
+                            lName = lName,
+                            Age = age,
+                            Wins = wins,
+                            Losses = losses,
+                            Points = points,
+                            Active = true,
+                            TeamIndex = teamsListBox.SelectedIndex - 1
+                        };
+                        playerListActive.Add(pActive);
+                    }
+                    catch (Exception ex) { MessageBox.Show(ex.Message);} //exception handling is here. thrown in the PlayerActive class
+                    
                     MessageBox.Show("Player " + fName + " " + lName + " has been added to the list of active players");
                     break;
                 case 1: //inactive
@@ -135,7 +117,6 @@ namespace SportsProject
                 default:
                     return;
             }
-
             txtFirstName.Clear();
             txtLastName.Clear();
             txtAge.Clear();

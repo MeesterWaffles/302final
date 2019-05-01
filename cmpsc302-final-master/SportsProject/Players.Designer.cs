@@ -52,7 +52,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(187, 300);
+            this.button1.Location = new System.Drawing.Point(241, 299);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 9;
@@ -88,7 +88,7 @@
             this.listBox1.ItemHeight = 15;
             this.listBox1.Location = new System.Drawing.Point(12, 199);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(454, 94);
+            this.listBox1.Size = new System.Drawing.Size(550, 94);
             this.listBox1.TabIndex = 99;
             // 
             // label1
@@ -190,7 +190,7 @@
             // 
             // shActiveBtn
             // 
-            this.shActiveBtn.Location = new System.Drawing.Point(336, 29);
+            this.shActiveBtn.Location = new System.Drawing.Point(250, 15);
             this.shActiveBtn.Name = "shActiveBtn";
             this.shActiveBtn.Size = new System.Drawing.Size(97, 41);
             this.shActiveBtn.TabIndex = 100;
@@ -200,7 +200,7 @@
             // 
             // shInactiveBtn
             // 
-            this.shInactiveBtn.Location = new System.Drawing.Point(336, 76);
+            this.shInactiveBtn.Location = new System.Drawing.Point(250, 62);
             this.shInactiveBtn.Name = "shInactiveBtn";
             this.shInactiveBtn.Size = new System.Drawing.Size(97, 41);
             this.shInactiveBtn.TabIndex = 101;
@@ -210,7 +210,7 @@
             // 
             // showAllBtn
             // 
-            this.showAllBtn.Location = new System.Drawing.Point(336, 123);
+            this.showAllBtn.Location = new System.Drawing.Point(250, 109);
             this.showAllBtn.Name = "showAllBtn";
             this.showAllBtn.Size = new System.Drawing.Size(97, 41);
             this.showAllBtn.TabIndex = 102;
@@ -223,9 +223,9 @@
             this.teamsListBox.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.teamsListBox.FormattingEnabled = true;
             this.teamsListBox.ItemHeight = 16;
-            this.teamsListBox.Location = new System.Drawing.Point(510, 57);
+            this.teamsListBox.Location = new System.Drawing.Point(353, 18);
             this.teamsListBox.Name = "teamsListBox";
-            this.teamsListBox.Size = new System.Drawing.Size(209, 132);
+            this.teamsListBox.Size = new System.Drawing.Size(209, 164);
             this.teamsListBox.TabIndex = 103;
             // 
             // Players
