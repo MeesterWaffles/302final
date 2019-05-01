@@ -7,6 +7,7 @@ namespace SportsProject
 {
     public abstract class PlayerAbstract
     {
+        //Abstract general class for a player. It only contains vital information about a player for name, age, and active status
         private string _fName;
         private string _lName;
         private int _age;

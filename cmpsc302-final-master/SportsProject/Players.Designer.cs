@@ -44,6 +44,9 @@
             this.txtWins = new System.Windows.Forms.TextBox();
             this.rbActive = new System.Windows.Forms.RadioButton();
             this.rbInactive = new System.Windows.Forms.RadioButton();
+            this.shActiveBtn = new System.Windows.Forms.Button();
+            this.shInactiveBtn = new System.Windows.Forms.Button();
+            this.showAllBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -58,37 +61,39 @@
             // 
             // txtFirstName
             // 
-            this.txtFirstName.Location = new System.Drawing.Point(122, 33);
+            this.txtFirstName.Location = new System.Drawing.Point(16, 31);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(100, 20);
             this.txtFirstName.TabIndex = 1;
             // 
             // txtLastName
             // 
-            this.txtLastName.Location = new System.Drawing.Point(122, 75);
+            this.txtLastName.Location = new System.Drawing.Point(16, 73);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(100, 20);
             this.txtLastName.TabIndex = 2;
             // 
             // txtAge
             // 
-            this.txtAge.Location = new System.Drawing.Point(122, 119);
+            this.txtAge.Location = new System.Drawing.Point(16, 117);
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(100, 20);
             this.txtAge.TabIndex = 3;
             // 
             // listBox1
             // 
+            this.listBox1.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 15;
             this.listBox1.Location = new System.Drawing.Point(12, 199);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(423, 95);
+            this.listBox1.Size = new System.Drawing.Size(454, 94);
             this.listBox1.TabIndex = 99;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(140, 17);
+            this.label1.Location = new System.Drawing.Point(34, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 13);
             this.label1.TabIndex = 5;
@@ -97,7 +102,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(140, 59);
+            this.label2.Location = new System.Drawing.Point(34, 57);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 13);
             this.label2.TabIndex = 6;
@@ -106,7 +111,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(159, 103);
+            this.label3.Location = new System.Drawing.Point(53, 101);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(26, 13);
             this.label3.TabIndex = 7;
@@ -115,7 +120,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(263, 17);
+            this.label4.Location = new System.Drawing.Point(157, 15);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(31, 13);
             this.label4.TabIndex = 8;
@@ -124,7 +129,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(263, 59);
+            this.label5.Location = new System.Drawing.Point(157, 57);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 13);
             this.label5.TabIndex = 9;
@@ -133,7 +138,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(246, 103);
+            this.label6.Location = new System.Drawing.Point(140, 101);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(73, 13);
             this.label6.TabIndex = 10;
@@ -141,21 +146,21 @@
             // 
             // txtLosses
             // 
-            this.txtLosses.Location = new System.Drawing.Point(228, 75);
+            this.txtLosses.Location = new System.Drawing.Point(122, 73);
             this.txtLosses.Name = "txtLosses";
             this.txtLosses.Size = new System.Drawing.Size(100, 20);
             this.txtLosses.TabIndex = 5;
             // 
             // txtPoints
             // 
-            this.txtPoints.Location = new System.Drawing.Point(228, 119);
+            this.txtPoints.Location = new System.Drawing.Point(122, 117);
             this.txtPoints.Name = "txtPoints";
             this.txtPoints.Size = new System.Drawing.Size(100, 20);
             this.txtPoints.TabIndex = 6;
             // 
             // txtWins
             // 
-            this.txtWins.Location = new System.Drawing.Point(228, 33);
+            this.txtWins.Location = new System.Drawing.Point(122, 31);
             this.txtWins.Name = "txtWins";
             this.txtWins.Size = new System.Drawing.Size(100, 20);
             this.txtWins.TabIndex = 4;
@@ -163,7 +168,7 @@
             // rbActive
             // 
             this.rbActive.AutoSize = true;
-            this.rbActive.Location = new System.Drawing.Point(142, 161);
+            this.rbActive.Location = new System.Drawing.Point(36, 159);
             this.rbActive.Name = "rbActive";
             this.rbActive.Size = new System.Drawing.Size(55, 17);
             this.rbActive.TabIndex = 7;
@@ -174,7 +179,7 @@
             // rbInactive
             // 
             this.rbInactive.AutoSize = true;
-            this.rbInactive.Location = new System.Drawing.Point(249, 161);
+            this.rbInactive.Location = new System.Drawing.Point(143, 159);
             this.rbInactive.Name = "rbInactive";
             this.rbInactive.Size = new System.Drawing.Size(63, 17);
             this.rbInactive.TabIndex = 8;
@@ -182,11 +187,44 @@
             this.rbInactive.Text = "Inactive";
             this.rbInactive.UseVisualStyleBackColor = true;
             // 
+            // shActiveBtn
+            // 
+            this.shActiveBtn.Location = new System.Drawing.Point(336, 29);
+            this.shActiveBtn.Name = "shActiveBtn";
+            this.shActiveBtn.Size = new System.Drawing.Size(97, 41);
+            this.shActiveBtn.TabIndex = 100;
+            this.shActiveBtn.Text = "Show Active Players";
+            this.shActiveBtn.UseVisualStyleBackColor = true;
+            this.shActiveBtn.Click += new System.EventHandler(this.ShActiveBtn_Click);
+            // 
+            // shInactiveBtn
+            // 
+            this.shInactiveBtn.Location = new System.Drawing.Point(336, 76);
+            this.shInactiveBtn.Name = "shInactiveBtn";
+            this.shInactiveBtn.Size = new System.Drawing.Size(97, 41);
+            this.shInactiveBtn.TabIndex = 101;
+            this.shInactiveBtn.Text = "Show Inactive Players";
+            this.shInactiveBtn.UseVisualStyleBackColor = true;
+            this.shInactiveBtn.Click += new System.EventHandler(this.ShInactiveBtn_Click);
+            // 
+            // showAllBtn
+            // 
+            this.showAllBtn.Location = new System.Drawing.Point(336, 123);
+            this.showAllBtn.Name = "showAllBtn";
+            this.showAllBtn.Size = new System.Drawing.Size(97, 41);
+            this.showAllBtn.TabIndex = 102;
+            this.showAllBtn.Text = "Show All Players";
+            this.showAllBtn.UseVisualStyleBackColor = true;
+            this.showAllBtn.Click += new System.EventHandler(this.ShowAllBtn_Click);
+            // 
             // Players
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(456, 331);
+            this.ClientSize = new System.Drawing.Size(478, 331);
+            this.Controls.Add(this.showAllBtn);
+            this.Controls.Add(this.shInactiveBtn);
+            this.Controls.Add(this.shActiveBtn);
             this.Controls.Add(this.rbInactive);
             this.Controls.Add(this.rbActive);
             this.Controls.Add(this.txtWins);
@@ -228,5 +266,8 @@
         private System.Windows.Forms.TextBox txtWins;
         private System.Windows.Forms.RadioButton rbActive;
         private System.Windows.Forms.RadioButton rbInactive;
+        private System.Windows.Forms.Button shActiveBtn;
+        private System.Windows.Forms.Button shInactiveBtn;
+        private System.Windows.Forms.Button showAllBtn;
     }
 }

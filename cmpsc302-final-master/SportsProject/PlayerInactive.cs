@@ -7,6 +7,7 @@ namespace SportsProject
 {
     public class PlayerInactive : PlayerAbstract
     {
+        //active player class that extends the abstract player. this class doesnt actually add anything extra unlike the active player class
         private string _fName;
         private string _lName;
         private int _age;

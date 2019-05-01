@@ -7,6 +7,7 @@ namespace SportsProject
 {
     public class PlayerActive : PlayerAbstract
     {
+        //active player class that extends the abstract player by adding information regarding play such as wins, losses, and points
         private int _wins;
         private int _losses;
         private int _points;

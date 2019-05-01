@@ -8,6 +8,7 @@ namespace SportsProject
 {
     class Player
     {
+        //unused
         private string _fName;
         private string _lName;
         private int _age;
