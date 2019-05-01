@@ -30,28 +30,31 @@ namespace SportsProject
         {
             //Error checking
             if (teamCounter == 5)
-            {
+            {   //checks for max teams allowed
                 MessageBox.Show("Error: maximum number of teams has been entered");
                 return;
             }
             int res;
             if (textBoxR1.Text.Trim().Equals("") || textBoxR2.Text.Trim().Equals("") || textBoxR3.Text.Trim().Equals(""))
             {
+                //checks for all scores entered
                 MessageBox.Show("Error: All scores must be entered");
                 return;
             }
             else if (!int.TryParse(textBoxR1.Text, out res) || !int.TryParse(textBoxR2.Text, out res) || !int.TryParse(textBoxR3.Text, out res))
             {
+                //checks for invalid score format
                 MessageBox.Show("Error: All scores must be integers");
                 return;
             }
             else if (int.Parse(textBoxR1.Text) < 0 || int.Parse(textBoxR2.Text) < 0 || int.Parse(textBoxR3.Text) < 0)
-            {
+            {   
+                //checks for valid numbers (non-negative only)
                 MessageBox.Show("Error: Scores can not be negative");
                 return;
             }
 
-            //Error checking is over now we can do the scores
+            //Error checking is over now we can get the scores from the form
             int s1 = int.Parse(textBoxR1.Text);
             int s2 = int.Parse(textBoxR2.Text);
             int s3 = int.Parse(textBoxR3.Text);
@@ -67,7 +70,6 @@ namespace SportsProject
 
             //lets higher team scores rise to the top by swapping
             //this is essentially a bubble sort
-            
             //fringe case for at least 2 teams entered and top scores being off
             if (teamCounter >= 2 && scores[0,3] < scores[1,3]) swap(0, 1);
             int tryCounter = 0;
@@ -87,10 +89,10 @@ namespace SportsProject
 
         private void ShowStandings_Click(object sender, EventArgs e)
         {
+            //this method adds all the teams to the standings. they should be automatically sorted
             teamStandings.Items.Clear();
             teamStandings.Items.Add("      Team Name | Round 1 | Round 2 | Round 3 |   Total | Rank");
 
-            //keeps track of place
             for (int i = 0; i < teamCounter; i++)
             {
                 string t = string.Format("{0,15} | {1,7} | {2,7} | {3,7} | {4,7} | {5}",
@@ -139,6 +141,11 @@ namespace SportsProject
             catch (IndexOutOfRangeException iore) { Console.WriteLine(""); }
 
             return true;
+        }
+
+        private void Standings_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

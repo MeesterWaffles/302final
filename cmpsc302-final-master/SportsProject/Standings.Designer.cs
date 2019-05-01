@@ -67,7 +67,7 @@
             this.textBoxR3.Location = new System.Drawing.Point(316, 62);
             this.textBoxR3.Name = "textBoxR3";
             this.textBoxR3.Size = new System.Drawing.Size(100, 20);
-            this.textBoxR3.TabIndex = 0;
+            this.textBoxR3.TabIndex = 4;
             // 
             // textBoxName
             // 
@@ -131,7 +131,7 @@
             this.button1.Location = new System.Drawing.Point(140, 99);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(153, 23);
-            this.button1.TabIndex = 8;
+            this.button1.TabIndex = 5;
             this.button1.Text = "Submit Team Scores";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
@@ -151,7 +151,7 @@
             this.showStandings.Location = new System.Drawing.Point(12, 176);
             this.showStandings.Name = "showStandings";
             this.showStandings.Size = new System.Drawing.Size(193, 23);
-            this.showStandings.TabIndex = 2;
+            this.showStandings.TabIndex = 6;
             this.showStandings.Text = "Show Team Standings";
             this.showStandings.UseVisualStyleBackColor = true;
             this.showStandings.Click += new System.EventHandler(this.ShowStandings_Click);
@@ -166,6 +166,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Standings";
             this.Text = "Standings";
+            this.Load += new System.EventHandler(this.Standings_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
