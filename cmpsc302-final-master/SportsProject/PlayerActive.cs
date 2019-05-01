@@ -18,7 +18,6 @@ namespace SportsProject
         private string _fname;
         private string _lname;
         private bool _active;
-        private int _teamIndex;
 
         public int Wins
         {
@@ -67,6 +66,5 @@ namespace SportsProject
             get { return _active; }
             set { _active = value; }
         }
-        public int TeamIndex { get => _teamIndex; set => _teamIndex = value; }
     }
 }

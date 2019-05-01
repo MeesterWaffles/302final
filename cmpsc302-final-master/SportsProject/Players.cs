@@ -38,11 +38,7 @@ namespace SportsProject
             int active = -1;
 
             //error checking begin
-            if (teamsListBox.SelectedIndex == -1 && rbActive.Checked)
-            {
-                MessageBox.Show("Error: an active player must have a team");
-            }
-            else if(int.TryParse(txtAge.Text, out result))
+            if(int.TryParse(txtAge.Text, out result))
             {
                 age = int.Parse(txtAge.Text);
                 if(age <= 0) {
@@ -95,7 +91,6 @@ namespace SportsProject
                             Losses = losses,
                             Points = points,
                             Active = true,
-                            TeamIndex = teamsListBox.SelectedIndex - 1
                         };
                         playerListActive.Add(pActive);
                     }
@@ -174,18 +169,7 @@ namespace SportsProject
 
         private void Players_Load(object sender, EventArgs e)
         {
-            teamList = new List<TeamClass>();
-            using (StreamReader r = new StreamReader("teamsdata.json"))
-            {
-                string json = r.ReadToEnd();
-                if (!json.Equals("")) teamList = JsonConvert.DeserializeObject<List<TeamClass>>(json);
-            }
 
-            teamsListBox.Items.Add("List of Team Names:");
-            foreach (TeamClass tc in teamList)
-            {
-                teamsListBox.Items.Add(tc.Name);
-            }
         }
     }
 }

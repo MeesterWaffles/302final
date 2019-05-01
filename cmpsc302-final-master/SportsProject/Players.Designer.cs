@@ -47,7 +47,6 @@
             this.shActiveBtn = new System.Windows.Forms.Button();
             this.shInactiveBtn = new System.Windows.Forms.Button();
             this.showAllBtn = new System.Windows.Forms.Button();
-            this.teamsListBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // button1
@@ -218,22 +217,11 @@
             this.showAllBtn.UseVisualStyleBackColor = true;
             this.showAllBtn.Click += new System.EventHandler(this.ShowAllBtn_Click);
             // 
-            // teamsListBox
-            // 
-            this.teamsListBox.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.teamsListBox.FormattingEnabled = true;
-            this.teamsListBox.ItemHeight = 16;
-            this.teamsListBox.Location = new System.Drawing.Point(353, 18);
-            this.teamsListBox.Name = "teamsListBox";
-            this.teamsListBox.Size = new System.Drawing.Size(209, 164);
-            this.teamsListBox.TabIndex = 103;
-            // 
             // Players
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(826, 331);
-            this.Controls.Add(this.teamsListBox);
+            this.ClientSize = new System.Drawing.Size(595, 331);
             this.Controls.Add(this.showAllBtn);
             this.Controls.Add(this.shInactiveBtn);
             this.Controls.Add(this.shActiveBtn);
@@ -282,6 +270,5 @@
         private System.Windows.Forms.Button shActiveBtn;
         private System.Windows.Forms.Button shInactiveBtn;
         private System.Windows.Forms.Button showAllBtn;
-        private System.Windows.Forms.ListBox teamsListBox;
     }
 }
