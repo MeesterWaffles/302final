@@ -83,5 +83,14 @@ namespace SportsProject
                 serializer.Serialize(file, teamList);
             }
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            teamsListBox.Items.Add("           Team Name | Team Points");
+            foreach (TeamClass tc in teamList)
+            {
+                teamsListBox.Items.Add(String.Format("{0,20} | {1,11}", tc.Name, tc.Points.ToString()));
+            }
+        }
     }
 }

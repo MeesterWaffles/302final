@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +22,7 @@ namespace SportsProject
      
         List<PlayerActive> playerListActive = new List<PlayerActive>();
         List<PlayerInactive> playerListInactive = new List<PlayerInactive>();
+        List<TeamClass> teamList = new List<TeamClass>();
         public Players() { InitializeComponent(); }
 
         private void button1_Click(object sender, EventArgs e)
@@ -185,6 +188,22 @@ namespace SportsProject
                 string s = String.Format("{0,10} | {1,9} | {2,3} |    N/A |    N/A |    N/A | {3}",
                     pl.fName, pl.lName, pl.Age.ToString(), pl.Active.ToString());
                 listBox1.Items.Add(s);
+            }
+        }
+
+        private void Players_Load(object sender, EventArgs e)
+        {
+            teamList = new List<TeamClass>();
+            using (StreamReader r = new StreamReader("teamsdata.json"))
+            {
+                string json = r.ReadToEnd();
+                if (!json.Equals("")) teamList = JsonConvert.DeserializeObject<List<TeamClass>>(json);
+            }
+
+            teamsListBox.Items.Add("List of Team Names:");
+            foreach (TeamClass tc in teamList)
+            {
+                teamsListBox.Items.Add(tc.Name);
             }
         }
     }
